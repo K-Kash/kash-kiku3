@@ -1,114 +1,69 @@
 ---
-title: Why do I need Markdown Slot
-date: 2019-2-26
+title: 鋸山
+date: 2021-11-1
 tags: 
-  - markdown
-  - vuepress
-author: Sal
-featuredimg: https://images.unsplash.com/photo-1569851409587-7e3a27cbfe1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=946&q=80
-summary: VuePress implements a content distribution API for Markdown.
+  - 山登り
+  - ツーリング
+  - 神社仏閣
+featuredimg: '/assets/img/2021-11-01/20211226114328_IMG_1567.JPG' 
+summary: ジブリの世界観　鋸山の登山
 ---
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-11-01/20211226114328_IMG_1567.JPG "サンプル")
+<br>
+***
+<br>
 
-VuePress implements a content distribution API for Markdown. With this feature, you can split your document into multiple fragments to facilitate flexible composition in the layout component.
+鋸山<br>
+標高329m<br>
+日本寺、地獄覗きなどの観光地としても人気の山<br>
 
-## Why do I need Markdown Slot?
+登山ルート<br>
+関東ふれあいの道➡️石切場➡️東京湾を望む展望台➡️山頂➡️日本寺
+<br>
+<br>
 
-First, let's review the relationship between layout components and markdown files:
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-11-01/20211226110544_IMG_1528.JPG "サンプル")
+<br>
+関東ふれあいの道から入山
+<br>
+<br>
 
-<diagram-markdown-slot-relationship/>
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-11-01/20211226115821_IMG_1609.JPG "サンプル")
+<br>
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-11-01/20211226114658_IMG_1580.JPG "サンプル")
+<br>
+岩切場に到着！<br>
+天空の城ラピュタの世界を体感できると言われていますが、まさにラピュタののような風景が広がっていました！
+<br>
+<br>
 
-Markdown files are providers of metadata (Page content, Configuration, etc.), while layout components consume them. We can use `frontmatter` to define some metadata for common data types, but `frontmatter` is hard to do something about markdown / HTML, a complex metadata that involves differences before and after compilation.
 
-Markdown Slot is to solve this kind of problem.
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-11-01/20211226122244_IMG_1616.JPG "サンプル")
+<br>
+東京湾を望む展望台に到着！<br>
+ここでお昼ごはんに
+<br>
+<br>
 
-## Named Slots
 
-You can define a named markdown slot through the following markdown syntax:
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-11-01/20211226123927_IMG_1624.JPG "サンプル")
+<br>
+山頂に到着！<br>
+折り返して、日本寺へ！
+<br>
+<br>
 
-``` md
-::: slot name
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-11-01/20211226143639_IMG_1687.JPG "サンプル")
+<br>
+日本寺北口より入場<br>
+いきなりおおきな百尺観音さまが！！
+<br>
+<br>
 
-:::
-```
 
-Use the `Content` component to use the slot in the layout component:
-
-``` vue
-<Content slot-key="name"/>
-```
-
-::: tip
-Here we are using `slot-key` instead of `slot`, because in Vue, `slot` is a reserved prop name.
-:::
-
-## Default Slot Content
-
-By default, the slot-free part of a markdown file becomes the default content of a markdown slot, which you can access directly using the `Content` component:
-
-``` vue
-<Content/>
-```
-
-## Example
-
-Suppose your layout component is as follows:
-
-``` vue
-<template>
-  <div class="container">
-    <header>
-      <Content slot-key="header"/>
-    </header>
-    <main>
-      <Content/>
-    </main>
-    <footer>
-      <Content slot-key="footer"/>
-    </footer>
-  </div>
-</template>
-```
-
-If the markdown content of a page is like this:
-
-```md
-::: slot header
-# Here might be a page title
-:::
-
-- A Paragraph
-- Another Paragraph
-
-::: slot footer
-Here's some contact info
-:::
-```
-
-Then the rendered HTML of this page will be:
-
-```html
-<div class="container">
-  <header>
-    <div class="content header">
-      <h1>Here might be a page title</h1>
-    </div>
-  </header>
-  <main>
-    <div class="content default">
-      <ul>
-        <li>A Paragraph</li>
-        <li>Another Paragraph</li>
-      </ul>
-    </div>
-  </main>
-  <footer>
-    <div class="content footer">
-      <p>Here's some contact info</p>
-    </div>
-  </footer>
-</div>
-```
-
-Note that:
-1. Unlike the slot mechanism provided by [Vue](https://vuejs.org/v2/guide/components-slots.html) itself, each content distribution is wrapped in a `div` whose class is `content` with the name of the slot.
-2. Please ensure the uniqueness of the slot defined.
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-11-01/20211226132557_IMG_1637.JPG "サンプル")
+<br>
+地獄覗きを覗いてみました！<br>
+真下を見るとさすがに恐かったです😅
+<br>
+<br>

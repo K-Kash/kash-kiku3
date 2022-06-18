@@ -1,112 +1,41 @@
 ---
-title: Magical nature, God is perfect
-date: 2018-11-7
+title: 夕暮れ時のお散歩
+date: 2022-2-5
 tags: 
-  - frontmatter
-  - vuepress
-author: Sal
-featuredimg: https://images.unsplash.com/photo-1523978591478-c753949ff840?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMzk2fQ&auto=format&fit=crop&w=1350&q=80
-summary: I have travelled for so long that I can't even remember my own city.
+  - 柴犬
+  - 散歩
+featuredimg: '/assets/img/2022-01-30/20211230170127_IMG_1734.JPG'
+summary:  夕暮れ時の散歩風景
 
 ---
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2022-01-30/20211230170127_IMG_1734.JPG "サンプル")
+***
+<br>
 
-Any markdown file that contains a YAML front matter block will be processed by [gray-matter](https://github.com/jonschlinkert/gray-matter). The front matter must be the first thing in the markdown file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
+新しく購入した単焦点レンズの試用も兼ねて、夕方のきくちゃんの散歩を撮影しました！
+冬は日が暮れるのが早い:expressionless:
+<br>
+<br>
 
-```markdown
----
-title: Blogging Like a Hacker
-lang: en-US
----
-```
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2022-01-30/20211230165941_IMG_1728.JPG "サンプル")
+<br>
+畑は街灯が無いので、まだ明るいうちに通過してしまいます
+<br>
+<br>
 
-Between these triple-dashed lines, you can set predefined variables (see [below](#predefined-variables) for a reference), or even create custom ones of your own. These variables will then be available to you to access using <code>[$frontmatter](./global-computed.md#frontmatter)</code> at the rest of the page, plus all custom and theming components.
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2022-01-30/20211230170608_IMG_1742.JPG "サンプル")
+<br>
+国道を走る車を凝視するきくちゃん
+<br>
+<br>
 
-::: tip
-Front matter variables are **optional** in VuePress.
-:::
-
-## Alternative Front Matter Formats
-
-In addition, VuePress also supports JSON or [TOML](https://github.com/toml-lang/toml) front matter.
-
-JSON front matter needs to start and end in curly braces:
-
-```
----
-{
-  "title": "Blogging Like a Hacker",
-  "lang": "en-US"
-}
----
-```
-
-TOML front matter needs to be explicitly marked as TOML:
-
-```
----toml
-title = "Blogging Like a Hacker"
-lang = "en-US"
----
-```
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2022-01-30/20211230173735_IMG_1753.JPG "サンプル")
+<br>
+日が完全に落ちてしまいました:moon:<br>
+日が落ちると、きくちゃんは暗闇と同化してしまうのですww
+<br>
+<br>
 
 
-## Predefined Variables
 
-### title
 
-- Type: `string`
-- Default: `h1_title || siteConfig.title`
-
-Title of current page.
-
-### lang
-
-- Type: `string`
-- Default: `en-US`
-
-Language of current page.
-
-### description
-
-- Type: `string`
-- Default: `siteConfig.description`
-
-Description of current page.
-
-### layout
-
-- Type: `string`
-- Default: `Layout`
-
-Set the layout component of the current page.
-
-### permalink
-
-- Type: `string`
-- Default: `siteConfig.permalink`
-
-Refer to: [Permalinks](./permalinks.md).
-
-### metaTitle
-
-- Type: `string`
-- Default: <code>\`${page.title} | ${siteConfig.title}\`</code>
-
-Override the default meta title.
-
-### meta
-
-- Type: `array`
-- Default: `undefined`
-
-Specify extra meta tags to be injected:
-
-``` yaml
----
-meta:
-  - name: description
-    content: hello
-  - name: keywords
-    content: super duper SEO
----
-```

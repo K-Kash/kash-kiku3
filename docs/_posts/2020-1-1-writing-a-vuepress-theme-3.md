@@ -1,17 +1,67 @@
 ---
-title: Welcome to Mediumish
-date: 2020-1-1
+title: 幸手権現堂桜堤
+date: 2022-4-9
 tags: 
-  - theme
-  - blog
-  - vuepress
-author: Sal
-featuredimg: 'https://images.unsplash.com/photo-1576772269684-6c3b810ac8a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'
-summary: Journalism is the production and distribution of reports on events.
+  - 公園
+  - 花
+featuredimg: 'https://k-kash.s3.us-west-1.amazonaws.com/2022-04-09/1649665348592.jpg'
+summary: 関東屈指の桜となのはなの公園にお花見へ
 ---
+![ベンチ](https://k-kash.s3.us-west-1.amazonaws.com/2022-04-09/1649665348592.jpg "ベンチ")
+***
+<br>
 
-The word journalism applies to the occupation, as well as citizen journalists who gather and publish information. Journalistic media include print, television, radio, Internet, and, in the past, newsreels.
+関東屈指の桜の名所に写真仲間と一緒にお花見へ行きました！<br>
+約1km続く千本桜のトンネルと、広大な菜の花畑のコントラストがすばらしい。
+<br>
+<br>
 
-Concepts of the appropriate role for journalism vary between countries. In some nations, the news media are controlled by government intervention and are not fully independent.[1] In others, the news media are independent of the government but instead operate as private industry motivated by profit. In addition to the varying nature of how media organizations are run and funded, countries may have differing implementations of laws handling the freedom of speech and libel cases.
 
-The proliferation of the Internet and smartphones has brought significant changes to the media landscape since the turn of the 21st century. This has created a shift in the consumption of print media channels, as people increasingly consume news through e-readers, smartphones, and other personal electronic devices, as opposed to the more traditional formats of newspapers, magazines, or television news channels. News organizations are challenged to fully monetize their digital wing, as well as improvise on the context in which they publish in print. Newspapers have seen print revenues sink at a faster pace than the rate of growth for digital revenues.[2]
+![ベンチ](https://k-kash.s3.us-west-1.amazonaws.com/2022-04-09/1649665337788.jpg "ベンチ")
+<br>
+
+到着後、すぐにベンチでお昼を食べました！花より団子、、、<br>
+桜のトンネルとベンチがとてもエモい☺️ <br>
+写真仲間の撮った個人的ベストショット！
+<br>
+<br>
+
+![ベンチ](https://k-kash.s3.us-west-1.amazonaws.com/2022-04-09/1649665329709.jpg "ベンチ")
+<br>
+おもいで坂<br>
+スロープのような小さな坂にも名前が付いていました:open_mouth:
+<br>
+<br>
+
+
+![ベンチ](https://k-kash.s3.us-west-1.amazonaws.com/2022-04-09/1649665333546.jpg "ベンチ")
+<br>
+一際目立つきれいなピンク色の桜がありました！<br>
+一つだけ種類が違うのかな？？
+<br>
+<br>
+
+![ベンチ](https://k-kash.s3.us-west-1.amazonaws.com/2022-04-09/1649665334353.jpg "ベンチ")
+<br>
+散りかけの桜もきれいです:sparkles:
+<br>
+<br>
+
+
+![ベンチ](https://k-kash.s3.us-west-1.amazonaws.com/2022-04-09/1649665335741.jpg "ベンチ")
+<br>
+桜と菜の花に目が行きがちですが、たんぽぽも良きです！
+<br>
+<br>
+
+![ベンチ](https://k-kash.s3.us-west-1.amazonaws.com/2022-04-09/1649665336684.jpg "ベンチ")
+<br>
+散った桜が道をピンク色に染めていました！
+<br>
+<br>
+
+
+
+
+
+

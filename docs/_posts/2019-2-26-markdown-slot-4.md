@@ -1,114 +1,79 @@
 ---
-title: Markdown Slot 4
-date: 2019-2-26
+title: 江ノ島・鎌倉
+date: 2021-10-1
 tags: 
-  - markdown
-  - vuepress
-author: John Doe
-featuredimg: https://images.unsplash.com/photo-1566224425427-998503a013f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=898&q=80
-summary: Implementing markdown files, provders of metadata.
+  - 神社仏閣
+featuredimg: '/assets/img/2021-10-01/20211123_153433.jpg' 
+summary: 江ノ島・鎌倉　神社仏閣巡り
 ---
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-10-01/20211123_153433.jpg "サンプル")
+<br>
+***
+<br>
 
-VuePress implements a content distribution API for Markdown. With this feature, you can split your document into multiple fragments to facilitate flexible composition in the layout component.
+江ノ島・鎌倉へ神社仏閣巡りに行ってきました！<br>
 
-## Why do I need Markdown Slot?
+旅のルート<br>
+江ノ島➡️鎌倉大仏➡️長谷寺
+<br>
+<br>
 
-First, let's review the relationship between layout components and markdown files:
 
-<diagram-markdown-slot-relationship/>
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-10-01/20211123_152612.jpg "サンプル")
+<br>
+江ノ電を横手に江ノ島が見えてきました:flushed:<br>
+江ノ島のサーファーさんかっこいい！
+<br>
+<br>
 
-Markdown files are providers of metadata (Page content, Configuration, etc.), while layout components consume them. We can use `frontmatter` to define some metadata for common data types, but `frontmatter` is hard to do something about markdown / HTML, a complex metadata that involves differences before and after compilation.
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-10-01/20211123_134320.jpg "サンプル")
+<br>
+江ノ島に到着したらまずは腹ごしらえ！<br>
+名物のしらす丼を食べました:yum:
+<br>
+<br>
 
-Markdown Slot is to solve this kind of problem.
 
-## Named Slots
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-10-01/20211123_141643.jpg "サンプル")
+<br>
+江ノ島を上に登り、江ノ島神社へ向かいました
+<br>
+<br>
 
-You can define a named markdown slot through the following markdown syntax:
 
-``` md
-::: slot name
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-10-01/20211123_142144.jpg "サンプル")(神社)
+<br>
+江ノ島神社到着！<br>
+お参りをして、御朱印ももらってきました！
+<br>
+<br>
 
-:::
-```
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-10-01/DSC_0026.JPG "サンプル")
+<br>
+江ノ島から鎌倉大仏へ<br>
+とても大きな大仏に圧倒されました:flushed:<br>
+高さはなんと13.35m！
+<br>
+<br>
 
-Use the `Content` component to use the slot in the layout component:
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-10-01/20211123_170722.jpg "サンプル")
+<br>
+日が落ちてきたところで、長谷寺に到着！
+<br>
+<br>
 
-``` vue
-<Content slot-key="name"/>
-```
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-10-01/20220506_190155.jpg "サンプル")
+<br>
+観音様の足先に触れてお参りをする「御足参り（みあしまいり）」を体験しました！
+<br>
+<br>
 
-::: tip
-Here we are using `slot-key` instead of `slot`, because in Vue, `slot` is a reserved prop name.
-:::
 
-## Default Slot Content
+![テスト](https://k-kash.s3.us-west-1.amazonaws.com/2021-10-01/DSC_0052.JPG "サンプル")
+<br>
+夜になると寺がライトアップされ、とてもきれいでした✨<br>
+お地蔵さんもライトアップ:blush:
+<br>
+<br>
 
-By default, the slot-free part of a markdown file becomes the default content of a markdown slot, which you can access directly using the `Content` component:
 
-``` vue
-<Content/>
-```
-
-## Example
-
-Suppose your layout component is as follows:
-
-``` vue
-<template>
-  <div class="container">
-    <header>
-      <Content slot-key="header"/>
-    </header>
-    <main>
-      <Content/>
-    </main>
-    <footer>
-      <Content slot-key="footer"/>
-    </footer>
-  </div>
-</template>
-```
-
-If the markdown content of a page is like this:
-
-```md
-::: slot header
-# Here might be a page title
-:::
-
-- A Paragraph
-- Another Paragraph
-
-::: slot footer
-Here's some contact info
-:::
-```
-
-Then the rendered HTML of this page will be:
-
-```html
-<div class="container">
-  <header>
-    <div class="content header">
-      <h1>Here might be a page title</h1>
-    </div>
-  </header>
-  <main>
-    <div class="content default">
-      <ul>
-        <li>A Paragraph</li>
-        <li>Another Paragraph</li>
-      </ul>
-    </div>
-  </main>
-  <footer>
-    <div class="content footer">
-      <p>Here's some contact info</p>
-    </div>
-  </footer>
-</div>
-```
-
-Note that:
-1. Unlike the slot mechanism provided by [Vue](https://vuejs.org/v2/guide/components-slots.html) itself, each content distribution is wrapped in a `div` whose class is `content` with the name of the slot.
-2. Please ensure the uniqueness of the slot defined.
